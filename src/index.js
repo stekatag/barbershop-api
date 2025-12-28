@@ -7,6 +7,9 @@ const app = require('./app');
 const config = require('./config/config');
 const logger = require('./config/logger');
 
+// Set Mongoose 6 strictQuery option
+mongoose.set('strictQuery', false);
+
 // Reloader Function
 const url = `${process.env.BASE_API_URL}/health`; // Replace with your Render URL
 const interval = 50000; // Interval in milliseconds (50 seconds)
