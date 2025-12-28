@@ -1,3 +1,6 @@
+// Fix for Node.js 22/23 Buffer compatibility
+global.Buffer = global.Buffer || require('buffer').Buffer;
+
 const mongoose = require('mongoose');
 const axios = require('axios'); // Add axios import
 const app = require('./app');
