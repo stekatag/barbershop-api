@@ -1,3 +1,6 @@
+// Fix for Node.js 22/23 Buffer compatibility - must be first
+global.Buffer = global.Buffer || require('buffer').Buffer;
+
 const express = require('express');
 const helmet = require('helmet');
 const xss = require('xss-clean');

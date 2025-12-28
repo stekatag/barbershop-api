@@ -94,5 +94,10 @@
     "nodemon": "^2.0.22",
     "prettier": "^2.8.8",
     "supertest": "^6.3.4"
+  },
+  "resolutions": {
+    "buffer-equal-constant-time": "1.0.1",
+    "jwa": "^2.0.0",
+    "jws": "^4.0.0"
   }
 }
